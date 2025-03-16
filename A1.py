@@ -2,6 +2,16 @@ import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
 from collections import defaultdict
+import sys
+
+if len(sys.argv) < 2:
+    print("Pass the path to the network as an argument")
+    exit(-2)
+
+path = sys.argv[1]
+if not path:
+    print("Pass the path to the network as an argument")
+    exit(-1)
 
 def analyze_network(net_path):
     # Read the network
@@ -96,7 +106,7 @@ def analyze_network(net_path):
     }
 
 # I tried to deal with all the net documents, but always failed, so only 1 net document per time, we can change the net document name to analyze different net documents
-results = analyze_network(r'D:\EdgeDownload\activityA1\net4.net')
+results = analyze_network(path)
 
 # Printing Basic Statistics
 print("Network Statistics:")
