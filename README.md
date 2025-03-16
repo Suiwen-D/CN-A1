@@ -1,6 +1,29 @@
+# MESIIA 2024-2025 Complex Networks Activity 1
+
+## Running
+
+Install the requirements:
+
+```shell
+python -m env .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+```
+
+You must have at least `networkx`, `matplotlib` and `numpy` installed.
+
+Then, while still being in the activated Python environment,
+run the analyzer on one of the networks:
+
+```shell
+python A1.py net4.net
+```
+
+## The Task
+
 The objective of this activity is to learn how to characterize the structure of complex networks and become familiar with the models used to generate synthetic networks. The activity is composed of two parts:
 
-Part 1. Structural characterization of networks
+## Part 1. Structural characterization of networks
 
 You can find four different networks labelled as net1, net2, net3 and net4 in the activityA1.zip file.  To characterize their macroscopic structure, the students should analyze (at least) the following network descriptors:
 
@@ -17,7 +40,7 @@ The microscopic structure of the network is instead characterized by analyzing d
 
 PS. Visualization of these networks using networkx is discouraged due to their large size.
 
-Part 2. Models
+## Part 2. Models
 
 Based on the descriptors of the network and its degree distribution, the students should figure out the model used to generate the network. There are four possibilities: the ER model, the WS model with an intermediate rewiring probability, the BA model or the CM assuming a degree distribution which follows a power-law with $\gamma$<2.5.
 
